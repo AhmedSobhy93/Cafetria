@@ -56,6 +56,25 @@ a {
 label.label{
 	font-size:22;
 }
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
   </style>
 </head>
 <body>
@@ -94,6 +113,9 @@ label.label{
 
 	</div>
 	<!-- container fluid-->
+	<a name="myPage" >
+	
+	
 </nav>
 	
 	<div class="row">
@@ -147,12 +169,14 @@ label.label{
            
 		     <div class="control-group">
               <label class="control-label" for="product-picture">Product Picture</label>
-              <div class="controls">
-                <input type="file" class="form-control file-loading" name="product-picture" />
-                <p class="help-block">Please upload the product Picture</p>
-              </div>
+              
+			  <span class="btn-file file-input btn btn-block btn-primary">
+					Browse <input type="file">
+				</span>
             </div>
-			
+			<div class="control-group">
+			<label>-</label>
+			</div>
          
             <div class="control-group">
               <!-- Button -->
