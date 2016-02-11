@@ -23,17 +23,7 @@
                         $(this).toggle(350);
                      });
                  });
-
-		$('.navbar').find('a').each(function()
-		{
-		    if (window.location.href.indexOf($(this).attr('href')) > -1)
-		    {
-			    $(this).parent().addClass('active');
-		    }
-		});
              });
-
-
  </script>
 
   <style>
@@ -113,11 +103,11 @@ label.label{
 		<!-- nav-header-->
 		<div class="collapse navbar-collapse" id="link1">
 			<ul class="nav navbar-nav">
-				<li class="AdminHome.html "><a href="AdminHome.html" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
-				<li ><a href="AddProducts.html" class="glyphicon glyphicon-cutlery"><strong> <span class="bar">Products</span></strong></a></li>
-				<li ><a href="all_user.html" class="glyphicon glyphicon-user"> <strong><span class="bar">Users</span></strong></a></li>
-				<li ><a href="order_admin.php" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
-				<li ><a href="Checks.html" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
+				<li class="# "><a href="#" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
+				<li ><a href="#" class="glyphicon glyphicon-cutlery"><strong> <span class="bar">Products</span></strong></a></li>
+				<li ><a href="#" class="glyphicon glyphicon-user"> <strong><span class="bar">Users</span></strong></a></li>
+				<li ><a href="#" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
+				<li ><a href="#" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
 			</ul>
 				<figure >
 						<img src="img/admin.jpg" class="img-responsive2 logo nav-right" alt="Admin"  width="600" height="500"/>
@@ -146,40 +136,70 @@ label.label{
 	<div class="row">
 		<div class="col-sm-12">
 			<pre>
-			<h2>Orders</h2>
+			<h2>Checks</h2>
 			</pre>
 		</div>
 		
 	</div>
 	 <div class="row">
-	 <div class="col-md-12">
-	 <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Order-Date</th>
-        <th>name</th>
-        <th>Room</th>
-		<th>Ext</th>
-		<th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>21-22-223</td>
-        <td>Doe</td>
-        <td>33</td>
-		<td>3222</td>
-        <td>Deliver</td>
-      </tr>
-     
-    </tbody>
-	
-  </table>
-<div class="well well-lg"><img src=""  alt="drinks"/> <img src=""  alt="drinks"/><img src=""  alt="drinks"/> <img src=""  alt="drinks"/></div>
+	 <div class="col-md-3"></div>
+  	<div class="col-md-6">
 
     </div> 
   </div>
  
+  <div class="row">
+	<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<form class="form-inline" role="form">
+	  <div class="form-group">
+		<label for="from">Date From</label>
+		<input type="date" class="form-control" id="from" name="from">
+	  </div>
+	  <div class="form-group">
+		<label for="ro">Date To</label>
+		<input type="date" class="form-control" id="to" name="to">
+	  </div>
+	  <div class="form-group">
+	  <label for="users">Select User:</label>
+	  <select class="form-control" id="users">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	  </select>
+	</div>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+			</div>
+		<div class="col-sm-2"></div>
+	</div>
+	
+	
+<h2> NAme and total Amount </h2>
+
+<table border=0>
+	<tr class="RowToClick"><td>Islam</td></tr>
+    <tr><td>23-33-3...</td></tr>
+    <tr><td>22-3-3...</td></tr>
+    
+</table>
+
+<table border=0>
+	<tr class="RowToClick"><td>Ahmed</td></tr>
+	 <tr><td>23-33-3...</td></tr>
+		<tr><td>23-33-3...</td></tr>
+		<tr><td>22-3-3...</td></tr>
+    <tr><td>22-3-3...</td></tr>
+</table>
+
+<ul class="pagination pagination-lg">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
 	
 	<!-- footer using well -->
 	<footer class="text-center">

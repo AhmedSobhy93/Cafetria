@@ -113,7 +113,7 @@ label.label{
 		<!-- nav-header-->
 		<div class="collapse navbar-collapse" id="link1">
 			<ul class="nav navbar-nav">
-				<li class="AdminHome.html "><a href="AdminHome.html" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
+				<li class="# "><a href="AdminHome.html" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
 				<li ><a href="AddProducts.html" class="glyphicon glyphicon-cutlery"><strong> <span class="bar">Products</span></strong></a></li>
 				<li ><a href="all_user.html" class="glyphicon glyphicon-user"> <strong><span class="bar">Users</span></strong></a></li>
 				<li ><a href="order_admin.php" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
