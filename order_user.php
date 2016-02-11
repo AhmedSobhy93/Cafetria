@@ -8,7 +8,6 @@
     <style>
         .nav{
             padding:5;
-            background-color: #40bf80;
             border-color: #E7E7E7;
             text-color: #777;
         }
@@ -28,7 +27,7 @@
 
         /* Add a dark background color to the footer */
         footer {
-            background-color: #2d2d30;
+
             color: #f5f5f5;
             padding: 32px;
         }
@@ -80,7 +79,7 @@
 
 <body>
 
-<nav class="nav navbar-inverse navbar-fixed-top">
+<nav class="nav navbar-inverse">
     <div class="container-fluid">
         <div class="nav-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#link1" aria-expanded="false">
@@ -92,7 +91,7 @@
             <a class="navbar-brand" href="#">
                 <figure>
                     <img src="img/logo.png"class="logo" alt="logo" width="150" height="30"/>
-                    <figcaption>Cafeteria Om 7asn</figcaption>
+                    <figcaption class="bar">Cafeteria Om 7asn</figcaption>
                 </figure>
             </a>
         </div>
@@ -103,8 +102,8 @@
                 <li ><a href="#" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">My Orders</span></strong></a></li>
             </ul>
             <figure class="nav navbar-nav navbar-right" >
-                <img src="img/admin.jpg"   alt="Admin"  width="50" height="50"/>
-                <figcaption  ><span>User Name</span></figcaption>
+                <img src="img/admin.jpg"  alt="Admin"  width="50" height="50"/>
+                <figcaption class="bar" ><span>User Name</span></figcaption>
             </figure>
         </div>
 
@@ -113,16 +112,12 @@
     <a name="myPage" >
 </nav>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 
 
 <div class="row" style="padding:5;margin:5;">
-    <div class="col-md-4" style=" border: 2px solid; background: #73AD21; padding:5;margin:5;">
+    <div class="col-md-4" style=" border: 2px solid; background: #BF4068; padding:5;margin:5;">
         <div class="table-responsive">
             <table class="table table-striped table-bordered table-condensed table-hover">
                 <tr>
@@ -177,9 +172,8 @@
 <footer class="text-center">
     <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
         <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
-    <p>Cafetria Om Gamal Made By <a href="#" data-toggle="tooltip" title="Jaguars">Jaguars</a> &copy;</p>
+    </a>
+    <p class="bar">Cafetria Om Gamal Made By <a href="#" data-toggle="tooltip" class="bar" title="Jaguars">Jaguars</a> &copy;</p>
 </footer>
-
 </body>
 </html>

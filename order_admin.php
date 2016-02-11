@@ -6,81 +6,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
-        .nav{
-            padding:5;
-            background-color: #40bf80;
-            border-color: #E7E7E7;
-            text-color: #777;
-        }
-        .text-center{
-            background-color: #40bf80;
-            border-color: #E7E7E7;
-            text-color: #777;
-        }
-        .bar {
-            color:#BF4068;
-        }
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 70%;
-            margin: auto;
-        }
+            .nav{
+                padding:5;
+                background-color: #40bf80;
+                border-color: #E7E7E7;
+                text-color: #777;
+            }
+            .text-center{
+                background-color: #40bf80;
+                border-color: #E7E7E7;
+                text-color: #777;
+            }
+            .bar {
+                color:#BF4068;
+            }
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 70%;
+                margin: auto;
+            }
 
-        /* Add a dark background color to the footer */
-        footer {
-            background-color: #2d2d30;
-            color: #f5f5f5;
-            padding: 32px;
-        }
+            /* Add a dark background color to the footer */
+            footer {
+                background-color: #2d2d30;
+                color: #f5f5f5;
+                padding: 32px;
+            }
 
-        footer a {
-            color: #f5f5f5;
-        }
+            footer a {
+                color: #f5f5f5;
+            }
 
-        footer a:hover {
-            color: #777;
-            text-decoration: none;
-        }
+            footer a:hover {
+                color: #777;
+                text-decoration: none;
+            }
 
-        a {
-            color: white;
-            text-decoration: none; /* no underline */
-        }
+            a {
+                color: white;
+                text-decoration: none; /* no underline */
+            }
 
-        .img-responsive2 {
-            display: inline-block;
-            max-width: 10%;
-            height: 20%;
-        }
+            .img-responsive2 {
+                display: inline-block;
+                max-width: 10%;
+                height: 20%;
+            }
 
-        label.label{
-            font-size:22;
-        }
-        .btn-file {
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-file input[type=file] {
-            position: absolute;
-            top: 0;
-            right: 0;
-            min-width: 100%;
-            min-height: 100%;
-            font-size: 100px;
-            text-align: right;
-            filter: alpha(opacity=0);
-            opacity: 0;
-            outline: none;
-            background: white;
-            cursor: inherit;
-            display: block;
-        }
-    </style>
+            label.label{
+                font-size:22;
+            }
+            .btn-file {
+                position: relative;
+                overflow: hidden;
+            }
+            .btn-file input[type=file] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                min-width: 100%;
+                min-height: 100%;
+                font-size: 100px;
+                text-align: right;
+                filter: alpha(opacity=0);
+                opacity: 0;
+                outline: none;
+                background: white;
+                cursor: inherit;
+                display: block;
+            }
+        </style>
 </head>
 
 <body>
 
-<nav class="nav navbar-inverse navbar-fixed-top">
+<nav class="nav navbar-inverse">
     <div class="container-fluid">
         <div class="nav-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#link1" aria-expanded="false">
@@ -92,7 +92,7 @@
             <a class="navbar-brand" href="#">
                 <figure>
                     <img src="img/logo.png"class="logo" alt="logo" width="150" height="30"/>
-                    <figcaption>Cafeteria Om 7asn</figcaption>
+                    <figcaption class="bar">Cafeteria Om 7asn</figcaption>
                 </figure>
             </a>
         </div>
@@ -104,7 +104,7 @@
             </ul>
             <figure class="nav navbar-nav navbar-right" >
                 <img src="img/admin.jpg"   alt="Admin"  width="50" height="50"/>
-                <figcaption  ><span>Admin Name</span></figcaption>
+                <figcaption id="admin_name" ><span>Admin Name</span></figcaption>
             </figure>
         </div>
 
@@ -113,16 +113,11 @@
     <a name="myPage" >
 </nav>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 
 <div class="row" style="padding:5;margin:5;">
-    <div class="col-md-4" style=" border: 2px solid; background: #73AD21; padding:5;margin:5;">
+    <div class="col-md-4" style=" border: 2px solid; background: #BF4068; padding:5;margin:5;">
         <div class="table-responsive">
             <table class="table table-striped table-bordered table-condensed table-hover">
                 <tr>
@@ -186,8 +181,8 @@
 <footer class="text-center">
     <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
         <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
-    <p>Cafetria Om Gamal Made By <a href="#" data-toggle="tooltip" title="Jaguars">Jaguars</a> &copy;</p>
+    </a>
+    <p class="bar">Cafetria Om Gamal Made By <a href="#" data-toggle="tooltip" class="bar" title="Jaguars">Jaguars</a> &copy;</p>
 </footer>
 
 </body>
