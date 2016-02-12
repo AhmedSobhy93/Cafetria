@@ -21,7 +21,7 @@
             </button>
             <a class="navbar-brand" href="#">
                 <figure>
-                    <img src="img/logo1.png"class="logo" alt="logo" width="150" height="30"/>
+                    <img src="img/logo.png"class="logo" alt="logo" width="150" height="30"/>
                     <figcaption class="bar">Cafeteria Om 7asn</figcaption>
                 </figure>
             </a>

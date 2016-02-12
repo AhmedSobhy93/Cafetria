@@ -57,10 +57,10 @@
 				<li ><a href="order_admin.php" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
 				<li ><a href="Checks.html" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
 			</ul>
-				<figure >
-						<img src="img/admin.jpg" class="img-responsive2 logo nav-right" alt="Admin"  width="600" height="500"/>
-						<figcaption class="nav-right"><span></span></figcaption>
-				</figure>
+				 <figure class="nav navbar-nav navbar-right" >
+					<img src="img/admin.jpg"  alt="Admin"  width="50" height="50"/>
+					<figcaption class="bar" ><span>User Name</span></figcaption>
+				 </figure>
 		</div>
 
 	</div>
@@ -123,23 +123,31 @@
 		<div class="col-sm-2"></div>
 	</div>
 	
-	
-<h2> NAme and total Amount </h2>
+<div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#name1">Ahmed Sobhy</a>
+        </h4>
+      </div>
+      <div id="name1" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item"><a data-toggle="collapse" href="#date1">23-4-1990</li>
+			<div id="date1" class="panel-collapse collapse">
+				<ul class="list-group">
+			  <li class="list-group-item">Tea</li>
+			  <li class="list-group-item">Coffee</li>
+			  <li class="list-group-item">Water</li>
+			</ul>
 
-<table border=0>
-	<tr class="RowToClick"><td>Islam</td></tr>
-    <tr><td>23-33-3...</td></tr>
-    <tr><td>22-3-3...</td></tr>
-    
-</table>
-
-<table border=0>
-	<tr class="RowToClick"><td>Ahmed</td></tr>
-	 <tr><td>23-33-3...</td></tr>
-		<tr><td>23-33-3...</td></tr>
-		<tr><td>22-3-3...</td></tr>
-    <tr><td>22-3-3...</td></tr>
-</table>
+	      </div>
+          <li class="list-group-item">33-9-1990</li>
+          <li class="list-group-item">22-3-2000</li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
 
 <ul class="pagination pagination-lg">
   <li><a href="#">1</a></li>

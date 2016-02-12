@@ -36,10 +36,10 @@
 				<li ><a href="order_admin.php" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
 				<li ><a href="Checks.html" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
 			</ul>
-				<figure >
-						<img src="img/admin.jpg" class="img-responsive2  nav-right" alt="Admin"  />
-						<figcaption class="nav-right"><span></span></figcaption>
-				</figure>
+				 <figure class="nav navbar-nav navbar-right" >
+					<img src="img/admin.jpg"  alt="Admin"  width="50" height="50"/>
+					<figcaption class="bar" ><span>User Name</span></figcaption>
+			 	   </figure>
 		</div>
 
 	</div>

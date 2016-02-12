@@ -21,16 +21,15 @@
         }
 
         footer a {
-            color: #f5f5f5;
+            
         }
 
         footer a:hover {
-            color: #777;
             text-decoration: none;
         }
 
         a {
-            color: white;
+            color: black;
             text-decoration: none; /* no underline */
         }
 
