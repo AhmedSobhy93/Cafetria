@@ -30,8 +30,11 @@ footer a:hover {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none; /* no underline */
+}
+a:hover{
+text-decoration: none;
 }
 
 .img-responsive2 {
@@ -63,7 +66,7 @@ label.label{
     display: block;
 }
 
- ul.pagination {
+ul.pagination {
     display: inline-block;
     padding: 0;
     margin: 0;
