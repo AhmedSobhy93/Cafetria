@@ -1,38 +1,64 @@
-.nav{
-		padding:5;
-		background-color: #40bf80;
-		border-color: #E7E7E7;
-		text-color: #777;
-  }
-  .text-center{
-			background-color: #40bf80;
-		border-color: #E7E7E7;
-		text-color: #777;
-  }
-  .bar {
-		color:#BF4068;
-  }
-  
-  /* Add a dark background color to the footer */
-footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-}
 
-footer a {
-    color: #f5f5f5;
-}
+ .nav{
+            padding:5;
+            border-color: #E7E7E7;
+            text-color: #777;
+        }
+        .text-center{
+            background-color: #401f80;
+            border-color: #E7E7E7;
+            text-color: #777;
+        }
+        .bar {
+            color:#BF4068;
+        }
 
-footer a:hover {
-    color: #777;
-    text-decoration: none;
-}
 
-a {
-  color: black;
-  text-decoration: none; /* no underline */
-}
+   /* Add a dark background color to the footer */
+       footer {
+            color: #f5f5f5;
+            padding: 32px;
+        }
+
+        footer a {
+            color: #f5f5f5;
+        }
+
+        footer a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none; /* no underline */
+        }
+
+      
+
+        label.label{
+            font-size:22;
+        }
+        .btn-file {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+        }
+
 a:hover{
 text-decoration: none;
 }
@@ -43,28 +69,6 @@ text-decoration: none;
     height: 5%;
 }
 
-label.label{
-	font-size:22;
-}
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
 
 ul.pagination {
     display: inline-block;
