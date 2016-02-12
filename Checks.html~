@@ -26,60 +26,8 @@
              });
  </script>
 
-  <style>
-  .nav{
-  
-		padding:5;
-		background-color: #40bf80;
-		border-color: #E7E7E7;
-		text-color: #777;
-  }
-  .text-center{
-			background-color: #40bf80;
-		border-color: #E7E7E7;
-		text-color: #777;
-  }
-  .bar {
-		color:#BF4068;
-  }
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
- 
-  /* Add a dark background color to the footer */
-footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-}
+     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-footer a {
-    color: #f5f5f5;
-}
-
-footer a:hover {
-    color: #777;
-    text-decoration: none;
-}
-
-a {
-  color: white;
-  text-decoration: none; /* no underline */
-}
-
-.img-responsive2 {
-    display: inline-block;
-    max-width: 10%;
-    height: 20%;
-}
-
-label.label{
-	font-size:22;
-}
-
-  </style>
 </head>
 <body>
 
@@ -103,11 +51,11 @@ label.label{
 		<!-- nav-header-->
 		<div class="collapse navbar-collapse" id="link1">
 			<ul class="nav navbar-nav">
-				<li class="# "><a href="#" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
-				<li ><a href="#" class="glyphicon glyphicon-cutlery"><strong> <span class="bar">Products</span></strong></a></li>
-				<li ><a href="#" class="glyphicon glyphicon-user"> <strong><span class="bar">Users</span></strong></a></li>
-				<li ><a href="#" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
-				<li ><a href="#" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
+				<li class="AdminHome.html "><a href="AdminHome.html" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
+				<li ><a href="AddProducts.html" class="glyphicon glyphicon-cutlery"><strong> <span class="bar">Products</span></strong></a></li>
+				<li ><a href="all_user.html" class="glyphicon glyphicon-user"> <strong><span class="bar">Users</span></strong></a></li>
+				<li ><a href="order_admin.php" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
+				<li ><a href="Checks.html" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
 			</ul>
 				<figure >
 						<img src="img/admin.jpg" class="img-responsive2 logo nav-right" alt="Admin"  width="600" height="500"/>
