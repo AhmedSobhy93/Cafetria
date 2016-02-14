@@ -33,3 +33,23 @@ create order product table
 10-create table order_product (order_id int(10) unsigned,foreign key (order_id) references order_user(order_id),product_id int(10) unsigned,foreign key (product_id) references product(product_id),amount int(10) unsigned not null);
 
 
+add column room id in order_user table
+
+11- alter table order_user add room_id int(10) unsigned;
+
+12-alter table order_user add foreign key (room_id) references room(room_id);
+
+
+add column order_status(processing-out of delivery-done) in order_product
+
+13-alter table order_product add order_status varchar(50);
+
+add column totatl_price for each order in order_product
+
+14-alter table order_product add total_price int(10) unsigned;
+
+
+
+
+
+
