@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>All Users</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+
+<nav class="nav navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="nav-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#link1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<figure>
+					<img src="img/logo1.png"class="logo" alt="logo" width="150" height="30"/>
+					<figcaption>Cafeteria Om 7asn</figcaption>
+				</figure>
+			</a>	
+		</div>
+		<!-- nav-header-->
+		<div class="collapse navbar-collapse" id="link1">
+			<ul class="nav navbar-nav">
+				<li class="AdminHome.html "><a href="AdminHome.html" class="glyphicon glyphicon-home"><strong> <span class="bar">Home</span></strong> <span class="sr-only">(current)</span></a></li> 
+				<li ><a href="AddProducts.html" class="glyphicon glyphicon-cutlery"><strong> <span class="bar">Products</span></strong></a></li>
+				<li ><a href="all_user.html" class="glyphicon glyphicon-user"> <strong><span class="bar">Users</span></strong></a></li>
+				<li ><a href="order_admin.php" class="glyphicon glyphicon-cutlery"> <strong><span class="bar">ManualOrders</span></strong></a></li>
+				<li ><a href="Checks.html" class="glyphicon glyphicon-log-out"> <strong><span class="bar">Checks</span></strong></a></li>
+			</ul>
+				<figure >
+						<img src="img/admin.jpg" class="img-responsive2 logo nav-right" alt="Admin"  width="600" height="500"/>
+						<figcaption class="nav-right"><span></span></figcaption>
+				</figure>
+		</div>
+
+	</div>
+	<!-- container fluid-->
+	<a name="myPage" >
+	
+	
+</nav>
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<pre>
+			
+			</pre>
+		</div>
+		
+	</div>
+
+	<hr>
+	<!-- body -->
+	<div id="legend">
+              <legend class="">All Users</legend>
+              <a href="#"><span class="add"> Add User</span></a>
+            </div>
+            <div class="table-responsive" id="mytable">
+  <table class="table" >
+  	<th>Name</th>
+  	<th>Room</th>
+  	<th>Image</th>
+  	<th>Ext</th>
+  	 <th>Action</th>
+  	 <tr> 
+	<td>Ahmed</td>
+	<td>200</td>
+	<td><img src="img/logo.png"  width="60px" height="45px"></td>
+	<td>213</td>
+	<td> <a href="#" class=" btn btn-primary"> Edit</a>
+	<a href="#" class=" btn btn-primary"> Delete</a>
+	</td>
+  	 </tr>
+  	 <tr> 
+	<td>Ahmed</td>
+	<td>200</td>
+	<td><img src="img/logo.png"  width="60px" height="45px"></td>
+	<td>213</td>
+	<td> <a href="#" class=" btn btn-primary"> Edit</a>
+	<a href="#" class=" btn btn-primary"> Delete</a>
+	</td>
+  	 </tr>
+  	 <tr> 
+	<td>Ahmed</td>
+	<td>200</td>
+	<td><img src="img/logo.png"  width="60px" height="45px"></td>
+	<td>213</td>
+	<td> <a href="#" class=" btn btn-primary"> Edit</a>
+	<a href="#" class=" btn btn-primary"> Delete</a>
+	</td>
+  	 </tr>
+  </table>
+</div>
+<div class="pag">
+<ul class="pagination">
+  <li><a href="#">prev</a></li>
+  <li><a href="#">1</a></li>
+  <li><a class="active" href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">6</a></li>
+  <li><a href="#">7</a></li>
+  <li><a href="#">next</a></li>
+</ul>
+</div>
+<!-- footer using well -->
+	<footer class="text-center">
+		  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		  </a><br><br>
+		<p>Cafetria Om Gamal Made By <a href="#" data-toggle="tooltip" title="Jaguars">Jaguars</a> &copy;</p> 
+	</footer>
+
+	<script>
+	$(document).ready(function(){
+		// Initialize Tooltip
+		$('[data-toggle="tooltip"]').tooltip(); 
+	})
+	</script>
+
+</body>
+</html>
