@@ -83,6 +83,8 @@ $product = new product();
                 <tr>
                     <td>Product Name</td>
                     <td>Amount</td>
+                    <td>increment order</td>
+                    <td>decrement order</td>
                     <td>Total Price</td>
                     <td>Cancel</td>
                 </tr>

@@ -38,17 +38,20 @@ function image_click(e)
     }
     if(flag==1)
     {
-        final_amount=$("#amount_"+image_id).val();
-        final_amount=final_amount++;
-        console.log(final_amount);
+        final_amount=amount[index];
+        //final_amount=final_amount++;
+        //console.log(final_amount);
 
-        amount[index]=final_amount;
+        //amount[index]=final_amount;
         flag=0;
-        single_price=$("#price"+image_id).val();
+        single_price=parseInt($("#price_"+image_id).val());
+        //console.log("single_price",single_price);
         amount_price=single_price*final_amount;
         all_order_price_array[index]=amount_price
-        $("#row_"+image_id).replaceWith('<tr id="row_'+image_id+'"><td>'+image_name+'</td><td><input id="amount_'+image_id+'" type="number" value="'+final_amount+'"></td><td>'+amount_price+'</td><td><button id="btn_'+image_id+'">cancel</button></td></tr>');
+        $("#row_"+image_id).replaceWith('<tr id="row_'+image_id+'"><td id="name_'+image_id+'">'+image_name+'</td><td><input id="amount_'+image_id+'" type="text" style="width:45px;" value="'+final_amount+'" disabled></td><td><button id="inc_'+image_id+'">+</button></td><td><button id="dec_'+image_id+'">-</button></td><td id="p_'+image_id+'">'+amount_price+'</td><td><button id="btn_'+image_id+'">cancel</button></td></tr>');
         $("#btn_"+image_id).on("click",cancel_click);
+        $("#inc_"+image_id).on("click",increment);
+        $("#dec_"+image_id).on("click",decrement);
 
     }
     else
@@ -58,12 +61,15 @@ function image_click(e)
         amount[choosen_product_array_length]=1;
         final_amount=1;
         index=choosen_product_array_length;
-        single_price=$("#price"+image_id).val();
+        single_price=parseInt($("#price_"+image_id).val());
+        console.log("single_price",single_price);
         amount_price=single_price;
         all_order_price_array[choosen_product_array_length]=amount_price;
 
-        $("#table>tbody").append('<tr id="row_'+image_id+'"><td>'+image_name+'</td><td><input id="amount_'+image_id+'" type="number" value="'+final_amount+'"></td><td>'+amount_price+'</td><td><button id="btn_'+image_id+'">cancel</button></td></tr>');
+        $("#table>tbody").append('<tr id="row_'+image_id+'"><td id="name_'+image_id+'">'+image_name+'</td><td><input id="amount_'+image_id+'" type="text" style="width:45px;" value="'+final_amount+'" disabled></td><td><button id="inc_'+image_id+'">+</button></td><td><button id="dec_'+image_id+'">-</button></td><td id="p_'+image_id+'">'+amount_price+'</td><td><button id="btn_'+image_id+'">cancel</button></td></tr>');
         $("#btn_"+image_id).on("click",cancel_click);
+        $("#inc_"+image_id).on("click",increment);
+        $("#dec_"+image_id).on("click",decrement);
 
     }
 
@@ -158,10 +164,155 @@ function cancel_click(e)
 
 
 
+    function increment(e)
+    {
+        var button_id=e.target.id;
+        var x=button_id.slice(4,5);
+        //console.log(x);
+
+        //console.log("ffffffffff", e.target.id);
+
+        //console.log($("#amount_"+image_id).val());
+        final_amount=parseInt($("#amount_"+x).val());
+        //console.log("eeeeee",final_amount);
+        final_amount=final_amount+1;
+        var prod_name=$("#name_"+x).text();
+        //console.log("prod_name",prod_name);
+
+        for(var i=0;i<choosen_product.length;i++)
+        {
+            if(prod_name==choosen_product[i])
+            {
+                amount[i]=final_amount;
+                index=i;
+                break;
+            }
+
+        }
+
+        single_price=$("#price_"+x).val();
+        //console.log("single_price",single_price);
+        amount_price=single_price*final_amount;
+        all_order_price_array[index]=amount_price
+        //console.log(amount_price);
+       // $("#row_"+x).replaceWith('<tr id="row_'+x+'"><td id="name_'+x+'">'+prod_name+'</td><td><input id="amount_'+x+'" type="text" style="width:45px;" value="'+final_amount+'" disabled></td><td><button id="inc_'+x+'">+</button></td><td><button id="dec_'+x+'">-</button></td><td>'+amount_price+'</td><td><button id="btn_'+x+'">cancel</button></td></tr>');
+       // $("#btn_"+image_id).on("click",cancel_click);
+        //$("#inc_"+image_id).on("click",increment);
+        //$("#dec_"+x).on("click",decrement);
+        $("#amount_"+x).val(final_amount);
+
+        $("#p_"+x).text(amount_price);
+       // console.log($("#p_"+x));
+        for(var i=0;i<all_order_price_array.length;i++)
+        {
+
+            total_price=total_price+all_order_price_array[i];
+
+        }
+
+
+        $("#total_price").text(total_price);
+
+
+        total_price=0;
 
 
 
+    }
 
+
+    function decrement(e)
+    {
+        var button_id=e.target.id;
+        var x=button_id.slice(4,5);
+        //console.log(x);
+
+        //console.log("ffffffffff", e.target.id);
+
+        //console.log($("#amount_"+image_id).val());
+        final_amount=parseInt($("#amount_"+x).val());
+        //console.log("eeeeee",final_amount);
+        final_amount=final_amount-1;
+        if(final_amount==0)
+        {
+            var row_deleted=$("#row_"+x);
+
+            var column_content=row_deleted.children('td').get(0).textContent;
+            for(var i=0;i<choosen_product.length;i++)
+            {
+                if(column_content==choosen_product[i])
+                {
+                    choosen_product.splice(i,1);
+                    amount.splice(i,1);
+                    all_order_price_array.splice(i,1);
+                    index=i;
+                    break;
+                }
+
+
+
+            }
+
+            row_deleted.remove();
+
+
+            for(var i=0;i<all_order_price_array.length;i++)
+            {
+
+                total_price=total_price+all_order_price_array[i];
+
+            }
+
+
+            $("#total_price").text(total_price);
+
+
+            total_price=0;
+
+
+
+        }
+        else {
+            var prod_name = $("#name_" + x).text();
+            //console.log("prod_name",prod_name);
+
+            for (var i = 0; i < choosen_product.length; i++) {
+                if (prod_name == choosen_product[i]) {
+                    amount[i] = final_amount;
+                    index = i;
+                    break;
+                }
+
+            }
+
+            single_price = $("#price_" + x).val();
+            //console.log("single_price",single_price);
+            amount_price = single_price * final_amount;
+            all_order_price_array[index] = amount_price
+            //console.log(amount_price);
+            // $("#row_"+x).replaceWith('<tr id="row_'+x+'"><td id="name_'+x+'">'+prod_name+'</td><td><input id="amount_'+x+'" type="text" style="width:45px;" value="'+final_amount+'" disabled></td><td><button id="inc_'+x+'">+</button></td><td><button id="dec_'+x+'">-</button></td><td>'+amount_price+'</td><td><button id="btn_'+x+'">cancel</button></td></tr>');
+            // $("#btn_"+image_id).on("click",cancel_click);
+            //$("#inc_"+image_id).on("click",increment);
+            //$("#dec_"+x).on("click",decrement);
+            $("#amount_" + x).val(final_amount);
+
+            $("#p_" + x).text(amount_price);
+            // console.log($("#p_"+x));
+            for (var i = 0; i < all_order_price_array.length; i++) {
+
+                total_price = total_price + all_order_price_array[i];
+
+            }
+
+
+            $("#total_price").text(total_price);
+
+
+            total_price = 0;
+
+        }
+
+    }
 
 
 
