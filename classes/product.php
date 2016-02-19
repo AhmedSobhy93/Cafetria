@@ -42,12 +42,8 @@ class product extends db_connection {
         //fathi  ajax
     }
 
-    public function add_product($product_name,$product_picture,$product_amount,$category_id) {
+    public function add_product($param) {
         // sobhy
-	
-	$result=mysqli_query("INSERT INTO product(product_name,product_picture,product_amount,category_id)VALUES ('$product_name','$product_picture','$product_amount','$category_id')");
-	return $result;
-    
     }
 
     public function total_amount_per_user($param) {
