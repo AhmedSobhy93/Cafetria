@@ -12,8 +12,21 @@ class product extends db_connection {
         //rana
     }
 
-    public function get_all_product($param) {
+   public function get_all_product() {
         //rana
+        $db = db_connection::getInstance();
+        $mysqli = $db->getConnection();
+        $query = " select * from product where product_amount = 'avaliable' ";
+        $res = $mysqli->query($query) or die (mysqli_error($mysqli));
+        if($res)
+        {
+            return $res;
+        }
+        else
+        {
+            return false;
+        }
+
     }
 
     public function select_all_prodcut($param) {
